@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<spawnabletypes>
+	<type name="Admin_LEHS">
+		<item name="Admin_LEHS_Battery" chance="1.00" />
+		<item name="Admin_LEHS_O2Tank" chance="1.00" />
+	</type>
+</spawnabletypes>
