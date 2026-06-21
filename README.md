@@ -2,87 +2,39 @@
 
 Part of the **DayZ Admin Tools** suite.
 
-This mod introduces administrative variants of the Namalsk LEHS suit and its supporting components. Designed for server administration, testing, and event control.
+This mod adds administrative variants of the Namalsk LEHS suit and its supporting components for server administration, testing, and event control. It does not replace the original Namalsk items.
 
----
+## Included items
 
-## 🧥 Included Items
+| Item | Classname | Changes |
+| --- | --- | --- |
+| Admin LEHS Suit | `Admin_LEHS` | Expanded cargo and attachment slots, maximum insulation, water resistance, and increased durability |
+| Admin LEHS Helmet | `Admin_LEHS_Helmet` | Reduced size and weight, with increased durability |
+| Admin LEHS Battery | `Admin_LEHS_Battery` | Extended charge, reduced weight, and increased durability |
+| Admin LEHS O2 Tank | `Admin_LEHS_O2Tank` | Extended capacity, reduced weight, and increased durability |
 
-### Admin LEHS Suit
-Enhanced administrative version of the Namalsk LEHS suit.
+## Requirements and compatibility
 
-- Maximum heat insulation
-- Fully water-resistant
-- Increased durability
-- Expanded cargo capacity
+- Requires **Namalsk Survival** by Sumrak.
+- Tested on DayZ 1.28.
+- Adds new classnames; it does not override Namalsk or vanilla classes.
 
----
+Load Namalsk Survival before this mod on both the server and clients.
 
-### Admin LEHS Battery
-High-capacity battery variant for the LEHS system.
+## Server configuration
 
-- Effectively extended charge
-- Increased durability
-- Prevents premature depletion during admin use
+The [`server_config`](server_config) directory contains example `types.xml` and `cfgspawnabletypes.xml` entries. Merge their contents into the corresponding files in your mission's `db` directory; do not replace the complete mission files.
 
----
+All four types have a nominal value of `0`, so the Central Economy will not place them as map loot. The `cfgspawnabletypes.xml` entry equips spawned `Admin_LEHS` suits with the admin battery and O2 tank.
 
-### Admin LEHS O2 Tank
-Extended-capacity oxygen tank.
+## Intended use
 
-- Near-infinite oxygen supply
-- Increased durability
-- Ideal for underwater or hazardous testing
+These items are deliberately overpowered and intended for administrators. If they are distributed to regular players, their balance impact is the server owner's responsibility.
 
----
+## Credits
 
-### Admin LEHS Helmet
-Durable administrative helmet variant.
-
----
-
-## 🧩 Design Philosophy
-
-- Fully additive (no overrides of Namalsk base items)
-- Clean inheritance structure
-- Requires Namalsk Survival
-- Designed for admin-only distribution
-
----
-
-## 🔄 Compatibility
-
-- Requires **Namalsk Survival** by Sumrak
-- Tested on DayZ 1.28
-- No vanilla overrides
-
----
-
-## 📂 Server Configuration
-
-Example configuration files included:
-
-- `types.xml`
-- `cfgspawnabletypes.xml`
-- Classname reference
-
-Server owners can adjust spawn control as required.
-
----
-
-## 🙌 Credits
-
-- Original Namalsk Survival content created by **Sumrak**
+- Original Namalsk Survival content created by **Sumrak**.
 - Additional support and suggestions from **77Nerrad77**, co-owner of New Dawn UK PvE DayZ Servers.
-
----
-
-## ⚠️ Intended Use
-
-These items are designed for administrative use.  
-If distributed to regular players, balance impact is the responsibility of the server owner.
-
----
 
 ## License
 
