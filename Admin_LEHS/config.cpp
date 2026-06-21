@@ -2,6 +2,14 @@ class CfgPatches
 {
 	class Admin_LEHS
 	{
+		units[] =
+		{
+			"Admin_LEHS",
+			"Admin_LEHS_Helmet",
+			"Admin_LEHS_Battery",
+			"Admin_LEHS_O2Tank"
+		};
+		weapons[] = {};
 		requiredVersion = 0.1;
 
 		// Ensures Namalsk LEHS gear is loaded before this addon
@@ -14,16 +22,13 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class Inventory_Base;
-	class Clothing;
-
 	//========================================================
 	// Admin LEHS Battery
 	// High-capacity, highly durable battery for admin use.
 	// Prevents early depletion during testing or events.
 	//========================================================
 
-	class dzn_lehs_battery: Inventory_Base{};
+	class dzn_lehs_battery;
 	class Admin_LEHS_Battery: dzn_lehs_battery
 	{
 		scope = 2;
@@ -60,7 +65,7 @@ class CfgVehicles
 	// Provides effectively unlimited oxygen for admin use.
 	//========================================================
 
-	class dzn_lehs_o2tank: Inventory_Base{};
+	class dzn_lehs_o2tank;
 	class Admin_LEHS_O2Tank: dzn_lehs_o2tank
 	{
 		scope = 2;
@@ -98,7 +103,7 @@ class CfgVehicles
 	// Provides maximum insulation and water resistance.
 	//========================================================
 
-	class dzn_lehs: Clothing{};
+	class dzn_lehs;
 	class Admin_LEHS: dzn_lehs
 	{
 		scope = 2;
@@ -143,7 +148,7 @@ class CfgVehicles
 	// Increased durability variant for admin use.
 	//========================================================
 
-	class dzn_lehs_helmet: Clothing{};
+	class dzn_lehs_helmet;
 	class Admin_LEHS_Helmet: dzn_lehs_helmet
 	{
 		scope = 2;
