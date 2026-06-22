@@ -32,8 +32,8 @@ class CfgVehicles
 	class Admin_LEHS_Battery: dzn_lehs_battery
 	{
 		scope = 2;
-		displayName = "Admin LEHS Battery";
-		descriptionShort = "High-capacity administrative LEHS battery.";
+		displayName = "$STR_ALEHS_BATTERY";
+		descriptionShort = "$STR_ALEHS_BATTERY_DESC";
 
 		weight = 1;
 		stackedUnit = "percentage";
@@ -69,8 +69,8 @@ class CfgVehicles
 	class Admin_LEHS_O2Tank: dzn_lehs_o2tank
 	{
 		scope = 2;
-		displayName = "Admin LEHS O2 Tank";
-		descriptionShort = "Administrative LEHS O2 tank with extended capacity.";
+		displayName = "$STR_ALEHS_O2_TANK";
+		descriptionShort = "$STR_ALEHS_O2_TANK_DESC";
 
 		itemSize[] = {1,2};
 		weight = 1;
@@ -107,8 +107,8 @@ class CfgVehicles
 	class Admin_LEHS: dzn_lehs
 	{
 		scope = 2;
-		displayName = "Admin LEHS Suit";
-		descriptionShort = "Administrative LEHS suit with maximum environmental protection.";
+		displayName = "$STR_ALEHS_SUIT";
+		descriptionShort = "$STR_ALEHS_SUIT_DESC";
 
 		attachments[] =
 		{
@@ -152,8 +152,8 @@ class CfgVehicles
 	class Admin_LEHS_Helmet: dzn_lehs_helmet
 	{
 		scope = 2;
-		displayName = "Admin LEHS Helmet";
-		descriptionShort = "Administrative LEHS helmet.";
+		displayName = "$STR_ALEHS_HELMET";
+		descriptionShort = "$STR_ALEHS_HELMET_DESC";
 
 		itemSize[] = {1,1};
 		weight = 1;
