@@ -31,6 +31,10 @@ All four types have a nominal value of `0`, so the Central Economy will not plac
 
 These items are deliberately overpowered and intended for administrators. If they are distributed to regular players, their balance impact is the server owner's responsibility.
 
+## Localization
+
+Localized item names and descriptions are included for English, Czech, German, Russian, Polish, Hungarian, Italian, Spanish, French, Traditional Chinese, Japanese, Portuguese, and Simplified Chinese. DayZ falls back to the English text when a client language is unavailable.
+
 ## Credits
 
 - Original Namalsk Survival content created by **Sumrak**.
